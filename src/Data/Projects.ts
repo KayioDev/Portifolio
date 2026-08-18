@@ -17,8 +17,7 @@ export const projectsData: ProjectType[] = [
     },
     {
         title: "Minishell",
-        description: `Aqui está a versão traduzida e adaptada para o português, mantendo a estrutura clara e o tom profissional para o seu README ou portfólio:
-Minishell é um projeto educacional desenvolvido em C que recria um shell Unix funcional do zero, emulando os comportamentos centrais do Bash. Desenvolvido em dupla, o projeto combina programação de sistemas em baixo nível com práticas sólidas de desenvolvimento colaborativo, divisão de tarefas e integração de código via Git.
+        description: `Minishell é um projeto educacional desenvolvido em C que recria um shell Unix funcional do zero, emulando os comportamentos centrais do Bash. Desenvolvido em dupla, o projeto combina programação de sistemas em baixo nível com práticas sólidas de desenvolvimento colaborativo, divisão de tarefas e integração de código via Git.
 Competências & Principais Recursos
 Análise Léxica e Parsing: Tokenização da linha de comando, validação de sintaxe e tratamento avançado de aspas simples e duplas.
 Árvores de Sintaxe Abstrata (AST): Representação estruturada de comandos para garantir a ordem correta de execução e precedência.

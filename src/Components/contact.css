@@ -54,10 +54,15 @@
   cursor: pointer;
 }
 
-.Contact__link {
+.Contact__link,
+.Contact__button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  gap: 0.6rem;
+}
+
+.Contact__link {
   min-width: 140px;
   text-decoration: none;
   color: #0f172a;
@@ -77,6 +82,20 @@
   box-shadow: 0 12px 24px rgba(14, 116, 144, 0.14);
 }
 
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0 12px 26px;
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.Footer p {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .Contact__content {
     flex-direction: column;
@@ -91,5 +110,11 @@
 @media (max-width: 768px) {
   .Contact {
     padding: 24px 18px;
+  }
+
+  .Footer {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
   }
 }
