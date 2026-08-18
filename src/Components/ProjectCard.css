@@ -60,6 +60,27 @@
   font-size: 0.96rem;
 }
 
+.ProjectCard__description {
+  display: block;
+  color: #d5e0ef;
+  line-height: 1.8;
+  font-size: 0.96rem;
+  transition: all 0.2s ease;
+}
+
+.ProjectCard__toggle {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #7dd3fc;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  align-self: flex-start;
+  cursor: pointer;
+}
+
 .ProjectCard__tech {
   display: flex;
   flex-wrap: wrap;
@@ -93,4 +114,14 @@
   font-weight: 800;
   background: linear-gradient(135deg, #67e8f9, #c4b5fd 60%, #dbeafe);
   box-shadow: 0 12px 24px rgba(103, 232, 249, 0.18);
+}
+
+@media (max-width: 640px) {
+  .ProjectCard {
+    min-height: auto;
+  }
+
+  .ProjectCard__description {
+    font-size: 0.9rem;
+  }
 }
