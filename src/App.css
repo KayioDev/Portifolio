@@ -1,0 +1,50 @@
+main {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 28px 0 72px;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  background: rgba(9, 14, 26, 0.84);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 26px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(2, 6, 23, 0.42);
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(148, 163, 184, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.03) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 100%);
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: min(100% - 18px, 1180px);
+    padding-top: 16px;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    width: min(100% - 18px, 1180px);
+    padding-top: 16px;
+  }
+
+  .Header,
+  .About,
+  .Projects,
+  .Contact {
+    padding: 24px 18px;
+  }
+
+  .Projects__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
